@@ -37,7 +37,7 @@ describe('Authenticate User', () => {
 
   it('should not be able to authenticate a none existent user', () => {
     expect(async () => {
-      authenticateUserUseCase.execute({
+      await authenticateUserUseCase.execute({
         email: 'false@email.com',
         password: '123456'
       });

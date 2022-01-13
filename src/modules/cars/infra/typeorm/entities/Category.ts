@@ -1,7 +1,7 @@
 import { v4 as uuidV4 } from 'uuid';
 import { Entity, PrimaryColumn, Column, CreateDateColumn } from 'typeorm';
 
-@Entity("categories")
+@Entity('categories')
 class Category {
   @PrimaryColumn()
   id?: string;
@@ -16,10 +16,10 @@ class Category {
   created_at: Date;
 
   constructor() {
-    if(!this.id) {
+    if (!this.id) {
       this.id = uuidV4();
     }
   }
 }
 
-export { Category }
+export { Category };
