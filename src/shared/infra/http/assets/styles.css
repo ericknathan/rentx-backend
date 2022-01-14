@@ -1,0 +1,43 @@
+body { background: #F4F5F6 }
+
+.swagger-ui .topbar { background-color: #29292E }
+
+.swagger-ui .topbar-wrapper img {
+  background: url('/logo.svg') no-repeat center;
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 123px;
+  padding-left: 125px;
+}
+
+.swagger-ui .info a { color: #DC1637 }
+.swagger-ui .info a:hover { color: #c2122f }
+
+.swagger-ui .btn.authorize { border-color: #c2122f; color: #DC1637 }
+
+.swagger-ui .btn.authorize svg { fill: #DC1637 }
+
+.swagger-ui .scheme-container { background: #FFFFFF }
+
+.swagger-ui .info .title small { background: #DC1637 }
+
+.swagger-ui .info .title small.version-stamp { background: #03B252 }
+
+.swagger-ui .opblock.opblock-post .opblock-summary-method {
+  background: #03B252;
+}
+
+.swagger-ui .opblock.opblock-post {
+  background: #03B25212;
+  border-color: #03B252;
+}
+
+.swagger-ui .opblock.opblock-get .opblock-summary-method {
+  background: #03A2B2;
+}
+
+.swagger-ui .opblock.opblock-get {
+  background: #03A2B212;
+  border-color: #03A2B2;
+}

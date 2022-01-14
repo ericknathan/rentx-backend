@@ -16,7 +16,15 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
+app.use(express.static(__dirname + '/public'));
+
+var options = {
+  customCssUrl: '/styles.css',
+  customSiteTitle: "Rentx Documentation",
+  customfavIcon: "/favicon.ico"
+};
+
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerFile, options));
 
 app.use(router);
 
