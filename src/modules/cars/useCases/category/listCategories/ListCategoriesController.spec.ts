@@ -33,13 +33,13 @@ describe('Create Category Controller', () => {
       password: 'admin',
     });
 
-    const { token } = responseToken.body;
+    const { refresh_token } = responseToken.body;
 
     await request(app).post('/categories').send({
       name: 'Supertest Category',
       description: 'Supertest Category Description',
     }).set({
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${refresh_token}`,
     });
 
     const response = await request(app).get('/categories');
@@ -48,5 +48,5 @@ describe('Create Category Controller', () => {
     expect(response.body.length).toBe(1);
     expect(response.body[0]).toHaveProperty('id');
     expect(response.body[0].name).toEqual('Supertest Category');
-  });
+  }, 30000);
 });
