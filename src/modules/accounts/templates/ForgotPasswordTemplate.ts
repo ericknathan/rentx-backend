@@ -73,7 +73,7 @@ function ForgotPasswordTemplate({ name, link }: ITemplate) {
             <span class="bold">Um pedido de recuperação de senha foi recebido para alterar a senha da sua conta Rentx.</span>
             <span>Para realizar a troca, clique no botão abaixo:</span>
             
-            <button onclick="location.href='${link}'">Alterar Senha</button>
+            <a href="${link}"><button onclick="location.href='${link}'">Alterar Senha</button></a>
             <span>Caso não consiga clicar no botão acima, <a href="${link}">clique aqui</a>.</span>
         
             <span>Caso não tenha sido você quem solicitou a alteração da senha, basta ignorar este e-mail.</span>
