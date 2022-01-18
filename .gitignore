@@ -1,2 +1,11 @@
-node_modules/
+node_modules
 tmp/*
+!tmp/.gitkeep
+dist
+coverage
+.vscode
+
+command.txt
+.env
+.gitignore
+ormconfig.json
